@@ -42,6 +42,7 @@ Konsep operasi Update yakni memperbarui atau mengganti data yang sebelumnya tela
 
 #### ❌ DELETE (Menghapus Data) 
 Konsep operasi Delete yakni dengan memilih id tiket yang akan dihapus. Kemudian, akan muncul pesan yang menyatakan bahwa data telah berhasil dihapus. Apabila data tidak berhasil dihapus makan akan muncul pesan kesalahan.  
+
 ---
 
 ## ⚠️ Exception Handling (Try-Catch dan Throws)
