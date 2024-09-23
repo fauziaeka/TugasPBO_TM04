@@ -8,9 +8,9 @@
 ---
 
 ## 📑 Table of Contents
-- CRUD (Create, Read, Update, Delete)[TugasPBO_TM04/PBO_PertemuanKeempat.java](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/PBO_PertemuanKeempat.java)
-- Exception Handling (Try-Catch dan Throws)[TugasPBO_TM04/Throws_Try_Catch.java](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/Throws_Try_Catch.java)
-- Custom Exception[TugasPBO_TM04/Exception_Zia.java](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/Exception_Zia.java)
+- [CRUD (Create, Read, Update, Delete)](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/PBO_PertemuanKeempat.java)
+- [Exception Handling (Try-Catch dan Throws)](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/Throws_Try_Catch.java)
+- [Custom Exception](https://github.com/fauziaeka/TugasPBO_TM04/blob/main/Exception_Zia.java)
 
 ---
 
@@ -32,17 +32,16 @@
 ### Operasi CRUD
 
 #### ➕ CREATE (Menambah Data) 
-Menambahkan data baru ke dalam database, termasuk ID tiket, nama event, tanggal, harga, jumlah, dan lokasi event. Data disimpan menggunakan perintah 'insert'.
+Konsep operasi Create yakni menambahkan data baru ke dalam database. Pada program ini memasukkan data tiket seperti id tiket, nama event, tanggal, harga, jumlah serta lokasi event. Data kemudian disimpan dengan menggunakan perintah 'Insert'.  
 
 #### 📖 READ (Menampilkan Data) 
-Menampilkan semua data yang telah ditambahkan, termasuk ID tiket, nama event, tanggal, harga, jumlah, dan lokasi event.
+Konsep operasi Read yakni menampilkan semua data yang telah ditambahkan. Dalam hal ini, yang akan ditampilkan adalah data tiket yang berisii ide tiket, nama event, tanggal, harga, jumlah, serta lokasi event.
 
 #### 🔄 UPDATE (Memperbarui Data) 
-Memperbarui data yang telah ditambahkan dengan mengisi primary key (ID tiket) dan data baru (nama event, tanggal, harga, jumlah, dan lokasi event).
+Konsep operasi Update yakni memperbarui atau mengganti data yang sebelumnya telah ditambahkan dengan mengisi primary key (ide tiket) kemudian mengisi data dengan yang baru (nama event, tanggal, harga, jumlah maupun lokasi event).  
 
 #### ❌ DELETE (Menghapus Data) 
-Menghapus data dengan memilih ID tiket yang diinginkan. Pesan akan muncul untuk mengonfirmasi penghapusan atau menunjukkan kesalahan jika gagal.
-
+Konsep operasi Delete yakni dengan memilih id tiket yang akan dihapus. Kemudian, akan muncul pesan yang menyatakan bahwa data telah berhasil dihapus. Apabila data tidak berhasil dihapus makan akan muncul pesan kesalahan.  
 ---
 
 ## ⚠️ Exception Handling (Try-Catch dan Throws)
@@ -50,29 +49,34 @@ Menghapus data dengan memilih ID tiket yang diinginkan. Pesan akan muncul untuk 
 Exception Handling adalah proses menangani kesalahan yang tidak terduga selama eksekusi program.
 
 ### Try-Catch
-Digunakan untuk menangkap kesalahan yang mungkin terjadi. Blok Try menempatkan kode yang rawan kesalahan, dan jika terjadi kesalahan, blok Catch akan menangkapnya.
+Pada Program ini, Try Catch digunakan untuk menangkap kesalahn yang mungkin terjadi. Blok Try digunakan untuk menempatkan kode yang rawan kesalahan kemudian, jika terjadi kesalahan maka blok catch akan menangkapnya. 
 
 ### Throws
 Digunakan untuk melempar exception secara eksplisit dari suatu metode atau blok kode.
 
 ### Penjelasan Kode
-- **Method KonversiTryCatch**: Mencoba mengonversi String menjadi Integer. Jika konversi gagal (misalnya, memasukkan huruf), `NumberFormatException' akan ditangkap dan pesan kesalahan dicetak. 
-- **Method KonversiThrows**: Mengonversi string menjadi integer tanpa menangkap kesalahan di dalam metode itu sendiri. Jika konversi gagal, `NumberFormatException' akan dilemparkan ke pemanggil metode. 
-- **Method Main**: Memanggil kedua metode dengan argumen valid dan tidak valid. 
-
+- **Method KonversiTryCatch**: Pada method ini program mencoba untuk menonversi String angkastr menjadi Integer. Jika konversi gagal (misalnya memasukkan huruf bukan angka) maka akan menangkap NumberFormatException dan mencetak pesan kesalahan.  
+- **Method KonversiThrows**: Pada method ini mengonversi string menjadi integer tetapi tidak menangkap kesalahan didalam method itu sendiri. Jika konversi gagal, NumberFormatException akan dilemparkan ke pemanggil method ini kemudian menangkap kesalahan tersebut.  
+- **Method Main**: Pada method main ini object dikonversi dari class Throws_Try_Catch. Kemudian,
+  Method konversiTryCatch dipanggil 2 kali : 
+  - Dengan argumen "200" (valid) 
+  - Dengan argumen "abc" (tidak valid karena merupakan huruf) 
+  Method konversiThrows juga dipanggil 2 kali : 
+  - Dengan argumen "300" (valid) 
+  - Dengan argumen "xyz" (tidak valid). Kemudian, akan melemparkan NumberFormatException dan ditangkap dalam blok try-catch 
 ---
 
 ## 🛠️ Custom Exception
 
-Custom exception adalah jenis exception yang didefinisikan oleh pengguna untuk menangani kondisi kesalahan spesifik yang tidak tercakup oleh exception standar.
+Custom exception adalah jenis exception yang didefinisikan oleh pengguna dalam program untuk menangani kondisi kesalahan yang spesifik dan tidak tercakup oleh exception standar yang disediakan oleh bahasa pemrograman. Program ini adalah custom exception 'Exception_Zia' yang merupakan turunan dari NumberFormatException.   
+   - Exception_Zia menangkap kondisi khusus (angka kurang dari 200) 
+   - NumberFormatException menangkap kesalahn saat format string tidak valid misalnya "abc" 
 
-### Contoh
-- **Exception_Zia** Turunan dari `NumberFormatException' yang menangkap kondisi khusus (angka kurang dari 200) dan memberikan pesan kesalahan yang relevan. 
 
 ---
 
 ## 📝 Kesimpulan
 
-- **CRUD** adalah operasi dasar untuk menambahkan, menampilkan, memperbarui, dan menghapus data. 
+- **CRUD** : operasi dasar untuk menambahkan, menampilkan, memperbarui, dan menghapus data. 
 - **Exception Handling**: Try-Catch menangani kesalahan secara langsung, sedangkan Throws digunakan untuk melempar exception secara eksplisit dari metode. 
 - **Custom Exception**: Menangani kondisi kesalahan yang spesifik dan relevan dengan aplikasi, membuat penanganan kesalahan lebih tepat sasaran. 
