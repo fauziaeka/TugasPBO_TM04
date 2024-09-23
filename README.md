@@ -56,7 +56,7 @@ Pada Program ini, Try Catch digunakan untuk menangkap kesalahn yang mungkin terj
 ### Throws
 Digunakan untuk melempar exception secara eksplisit dari suatu metode atau blok kode.
 
-### Penjelasan Kode
+### Penjelasan Code
 - **Method KonversiTryCatch**: Pada method ini program mencoba untuk menonversi String angkastr menjadi Integer. Jika konversi gagal (misalnya memasukkan huruf bukan angka) maka akan menangkap NumberFormatException dan mencetak pesan kesalahan.  
 - **Method KonversiThrows**: Pada method ini mengonversi string menjadi integer tetapi tidak menangkap kesalahan didalam method itu sendiri. Jika konversi gagal, NumberFormatException akan dilemparkan ke pemanggil method ini kemudian menangkap kesalahan tersebut.  
 - **Method Main**: Pada method main ini object dikonversi dari class Throws_Try_Catch. Kemudian,
